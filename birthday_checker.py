@@ -15,8 +15,6 @@ cursor = connection.cursor()
 today = str(date.today().strftime('%m-%d'))
 friends = []
 
-# correct query: select friend_name from friends where friend_DOB LIKE "%-04-15";
-
 def birthday_checker():
     # Check in the column friend_DOB if a date matches today
     for row in cursor.execute("select friend_name from friends where friend_DOB = :dob", {'dob': today}) : 
