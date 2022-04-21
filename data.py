@@ -38,9 +38,7 @@ def adding_friend_to_DB() :
         adding_friend_to_DB()
     else:
         print("Thank you for adding a friend to the app. Goodbye.")    
-    
-    # Not sure yet if this function needs to return something
-    return
+
 
 
 adding_friend_to_DB()
