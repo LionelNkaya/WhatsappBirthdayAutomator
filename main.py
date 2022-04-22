@@ -77,5 +77,6 @@ sys.exit()
 Review: 
 - Write a script that adds users to DB - Done in data.py
 - Write a script that checks everyday if someone has a birthday - Done in birthday_checker.py
-- If yes it runs this main script with friend name as argument - Done in main.py
+- Write that sends a message using a name as argument - Done in main.py
+- To get this script to run everyday using Windows Task Scheduler instructions are avaialbe here - https://www.geeksforgeeks.org/schedule-a-python-script-to-run-daily
 '''
