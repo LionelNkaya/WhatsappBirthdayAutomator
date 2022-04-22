@@ -68,8 +68,8 @@ for friend in list_of_friend_with_birthday_today:
     message_box.click()
     time.sleep(3)
 
-
 chrome_browser.close()
+chrome_browser.quit()
 sys.exit()
 
 
