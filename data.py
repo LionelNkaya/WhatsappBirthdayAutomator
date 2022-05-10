@@ -12,6 +12,9 @@ import datetime
 connection = sqlite3.connect("sqlite_App.db")
 cursor = connection.cursor()
 
+#Command used to create table
+#cursor.execute('''CREATE TABLE friends(friend_name TEXT, friend_DOB TEXT)''')
+
 
 
 def adding_friend_to_DB() :
