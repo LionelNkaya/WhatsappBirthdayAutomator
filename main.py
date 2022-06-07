@@ -22,7 +22,7 @@ options.add_argument('--profile-directory=Default')
 
 chrome_browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options= options)
 chrome_browser.get('https://web.whatsapp.com/')
-time.sleep(7) # Pausing to scan Whatsapp QR code or to wiath for Whatsapp to load
+time.sleep(20) # Pausing 20 seconds to scan Whatsapp QR code or to wait for Whatsapp to load
 
 msg = 'Happy birthday my dear friend. Tons of love from your bro Lionel'
 
@@ -64,7 +64,7 @@ for friend in list_of_friend_with_birthday_today:
     message_box.send_keys(msg)
     time.sleep(3)
     # Clicking on the button to send the message
-    message_box = chrome_browser.find_element(By.CLASS_NAME, '_4sWnG')
+    message_box = chrome_browser.find_element(By.CLASS_NAME, '_1Ae7k')
     message_box.click()
     time.sleep(3)
 
