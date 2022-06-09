@@ -9,7 +9,7 @@ import sqlite3
 import datetime
 
 #Creating connection to DB
-connection = sqlite3.connect("sqlite_App.db")
+connection = sqlite3.connect("app.db")
 cursor = connection.cursor()
 
 #Command used to create table
