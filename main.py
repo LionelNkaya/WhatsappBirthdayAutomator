@@ -17,12 +17,12 @@ from selenium.webdriver.common.by import By
 
 # Setting up webdriver for Crhome and adding cache information as argument for Whatsapp to remember the user
 options = webdriver.ChromeOptions()
-options.add_argument(r'--user-data-dir=C:/Users/Lionel.Nkaya/AppData/Local/Google/Chrome/User Data/Default')
-options.add_argument('--profile-directory=Default')
+options.add_argument(r'--user-data-dir=C:/Users/lnkaya/AppData/Local/Google/Chrome/User Data/lnkaya')
+options.add_argument('--profile-directory=lnkaya')
 
 chrome_browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options= options)
 chrome_browser.get('https://web.whatsapp.com/')
-time.sleep(20) # Pausing 20 seconds to scan Whatsapp QR code or to wait for Whatsapp to load
+time.sleep(100) # Pausing 20 seconds to scan Whatsapp QR code or to wait for Whatsapp to load
 
 msg = 'Happy birthday my dear friend. Tons of love from your bro Lionel'
 
