@@ -22,7 +22,7 @@ options.add_argument('--profile-directory=lnkaya')
 
 chrome_browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options= options)
 chrome_browser.get('https://web.whatsapp.com/')
-time.sleep(100) # Pausing 20 seconds to scan Whatsapp QR code or to wait for Whatsapp to load
+time.sleep(20) # Pausing 20 seconds to scan Whatsapp QR code or to wait for Whatsapp to load
 
 msg = 'Happy birthday my dear friend. Tons of love from your bro Lionel'
 
